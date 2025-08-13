@@ -1,31 +1,66 @@
 <template>
     <div class="panel">
-        <div  class="panelHeader">
+        <div class="panelHeader">
             <slot name="header"></slot>
         </div>
-        <div class="panelccContent">
+        <div class="panelContent">
             <slot></slot>
         </div>
-    </div>
+    </div> 
 </template>
 
 <script setup>
-
 </script>
 
 <style lang="less" scoped>
 .panel {
-    border: 0.5vh solid #ffffff;
-    height: 32vh;
-    width: 28vw;
-    overflow: hidden;
-    margin-top: 10vh;
+    margin-top: 2vh;
+    height: 40vh;
+    width: 27vw;
+    // overflow: hidden;
+    color: #ffffff;
 
-    .panel-header {
+    .panelHeader {
         width: 100%;
-        height: 30%;
-        background-color: #f2f2f2;
-        
+        height: 13%;
+        background-image: url('../../../assets/images/material/chart-item.png');
+        background-size: 88% 100%;
+        background-repeat: no-repeat;
+        background-position: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.95vw;
+    }
+
+    .panelContent {
+        margin-top: 2%;
+        height: 82%;
+        background-color: #53697670;
+        border-radius: 1vw;
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 35px;
+            width: 112px;
+            background-image: url('../../../assets/images/material/border.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -6px;
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+        &::before {
+            content: "";
+            height: 35px;
+            width: 112px;
+            background-image: url('../../../assets/images/material/border.png');
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+        }
     }
 }
 </style>
