@@ -1,0 +1,7 @@
+.generate-widthHeight(@i, @max) when (@i <= @max) {
+    .W@{i} { width: ~"@{i}%"; }
+    .H@{i} { height: ~"@{i}%"; }
+    .generate-widthHeight(@i + 1, @max)
+}
+
+.generate-widthHeight(1, 100);

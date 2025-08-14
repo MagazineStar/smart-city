@@ -39,6 +39,7 @@
         background-color: #53697670;
         border-radius: 1vw;
         position: relative;
+        padding: 20px;
 
         &::after {
             content: "";
