@@ -36,7 +36,6 @@ export const usePeopleOutDoor = () => {
         },
         legend: false,
         autoFit: true // 让图表跟随容器变化
-        // height: 330,
     }
 
     return {
