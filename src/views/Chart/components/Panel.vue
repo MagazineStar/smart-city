@@ -14,9 +14,9 @@
 
 <style lang="less" scoped>
 .panel {
-    margin-top: 2vh;
-    height: 40vh;
-    width: 27vw;
+    margin-top: 8vh;
+    height: 35vh;
+    width: 23vw;
     // overflow: hidden;
     color: #ffffff;
 
@@ -39,7 +39,7 @@
         background-color: #53697670;
         border-radius: 1vw;
         position: relative;
-        padding: 20px;
+        padding: 30px;
 
         &::after {
             content: "";
