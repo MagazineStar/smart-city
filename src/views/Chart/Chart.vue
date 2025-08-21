@@ -36,7 +36,7 @@
                         {{ item.title }}
                         <span>{{ item.amount }}{{ item.unit }}</span>
                     </p>
-                    <img :src="proxy.$utils.getImageUrl(`../assets/images/icon/${item.imgSrc}`)" alt="图片丢失了">
+                    <img :src="proxy.$utils.getImageUrl(item.imgSrc)" alt="图片丢失了">
                 </div>
             </div>
         </PanelSmall>
@@ -50,7 +50,7 @@
                         {{ item.title }}
                         <span>{{ item.amount }}{{ item.unit }}</span>
                     </p>
-                    <img :src="proxy.$utils.getImageUrl(`../assets/images/icon/${item.imgSrc}`)" alt="图片丢失了">
+                    <img :src="proxy.$utils.getImageUrl(item.imgSrc)" alt="图片丢失了">
                 </div>
             </div>
         </PanelSmall>

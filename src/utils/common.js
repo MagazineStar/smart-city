@@ -15,9 +15,26 @@ class Utils {
     }
 
     // 获得图片路径
-    getImageUrl(path) {
-        return new URL(path, import.meta.url).href
+    // getImageUrl(path) {
+    //     return new URL(path, import.meta.url).href
+    // }
+    constructor() {
+        // 构造函数
+        const modules = import.meta.glob('/src/assets/images/icon/*', {
+            eager: true,
+            import: 'default'
+        })
+        this.iconMap = {}
+        for (const [absPath, url] of Object.entries(modules)) {
+            const fileName = decodeURIComponent(absPath.split('/').pop())
+            this.iconMap[fileName] = url
+        }
     }
+
+    getImageUrl(name) {
+        return this.iconMap?.[name] || ''
+    }
+
 }
 
 const utils = new Utils()
