@@ -1,0 +1,23 @@
+{
+    "name": "三甲医院",
+    "children": [
+        {
+            "title": "医院",
+            "unit": "家",
+            "amount": 30,
+            "imgSrc": "医院.png"
+        },
+        {
+            "title": "门诊部",
+            "unit": "个",
+            "amount": 3000,
+            "imgSrc": "门诊.png"
+        },
+        {
+            "title": "病床",
+            "unit": "张",
+            "amount": 3000,
+            "imgSrc": "病床.png"
+        }
+    ]
+}

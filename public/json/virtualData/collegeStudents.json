@@ -1,0 +1,17 @@
+{
+    "name": "高校学生统计",
+    "children": [
+        {
+            "title": "高校",
+            "unit": "家",
+            "amount": "130",
+            "imgSrc": "学校.png"
+        },
+        {
+            "title": "在校大学生",
+            "unit": "万",
+            "amount": "100",
+            "imgSrc": "学生.png"
+        }
+    ]
+}
